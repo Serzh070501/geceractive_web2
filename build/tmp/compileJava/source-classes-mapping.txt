@@ -1,0 +1,51 @@
+com/example/generactive_web2/model/Resolution.java
+ com.example.generactive_web2.model.Resolution
+com/example/generactive_web2/util/idgenerator/GroupIdGenerator.java
+ com.example.generactive_web2.util.idgenerator.GroupIdGenerator
+com/example/generactive_web2/util/namegenerator/Nouns.java
+ com.example.generactive_web2.util.namegenerator.Nouns
+com/example/generactive_web2/mock/ConfigurationMock.java
+ com.example.generactive_web2.mock.ConfigurationMock
+com/example/generactive_web2/util/namegenerator/Adjectives.java
+ com.example.generactive_web2.util.namegenerator.Adjectives
+com/example/generactive_web2/util/namegenerator/NameGen.java
+ com.example.generactive_web2.util.namegenerator.NameGen
+com/example/generactive_web2/util/namegenerator/Casing.java
+ com.example.generactive_web2.util.namegenerator.Casing
+com/example/generactive_web2/HelloServlet.java
+ com.example.generactive_web2.HelloServlet
+com/example/generactive_web2/util/idgenerator/IdGenerator.java
+ com.example.generactive_web2.util.idgenerator.IdGenerator
+com/example/generactive_web2/util/idgenerator/Type.java
+ com.example.generactive_web2.util.idgenerator.Type
+com/example/generactive_web2/model/Configuration.java
+ com.example.generactive_web2.model.Configuration
+com/example/generactive_web2/servlet/NotFoundServlet.java
+ com.example.generactive_web2.servlet.NotFoundServlet
+com/example/generactive_web2/servlet/util/ErrorEntity.java
+ com.example.generactive_web2.servlet.util.ErrorEntity
+com/example/generactive_web2/servlet/util/HttpConstants.java
+ com.example.generactive_web2.servlet.util.HttpConstants
+ com.example.generactive_web2.servlet.util.HttpConstants$ContentType
+com/example/generactive_web2/servlet/RoomServlet.java
+ com.example.generactive_web2.servlet.RoomServlet
+com/example/generactive_web2/model/Group.java
+ com.example.generactive_web2.model.Group
+com/example/generactive_web2/model/Item.java
+ com.example.generactive_web2.model.Item
+com/example/generactive_web2/model/Basket.java
+ com.example.generactive_web2.model.Basket
+com/example/generactive_web2/model/BasketItem.java
+ com.example.generactive_web2.model.BasketItem
+com/example/generactive_web2/model/GenerativeItem.java
+ com.example.generactive_web2.model.GenerativeItem
+com/example/generactive_web2/mock/GroupMock.java
+ com.example.generactive_web2.mock.GroupMock
+com/example/generactive_web2/mock/ItemMock.java
+ com.example.generactive_web2.mock.ItemMock
+com/example/generactive_web2/repository/GroupRepository.java
+ com.example.generactive_web2.repository.GroupRepository
+com/example/generactive_web2/model/StockItem.java
+ com.example.generactive_web2.model.StockItem
+com/example/generactive_web2/servlet/ItemsServlet.java
+ com.example.generactive_web2.servlet.ItemsServlet
