@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 
 @WebServlet(name = "itemsServlet", value = "/items-servlet")
 public class ItemsServlet extends HttpServlet {
-    private final List<Item> items = new ArrayList<>();
+     final static List<Item> items = new ArrayList<>();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -70,6 +70,25 @@ public class ItemsServlet extends HttpServlet {
             resp.getWriter().write(objectMapper.writeValueAsString(errorEntity));
         }
     }
+
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType (HttpConstants.ContentType.APPLICATION_JSON);
+        PrintWriter out = resp.getWriter ();
+        String sid = req.getParameter ("id");
+        int id = Integer.parseInt (sid);
+        for (int i = 0; i < items.size(); i++) {
+            if (items.get(i).getId() == id){
+                items.remove(i);
+            }
+
+
+
+    }
+    }
+
+
 
     protected String getItemAsJson(Item item) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();

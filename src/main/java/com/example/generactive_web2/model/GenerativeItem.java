@@ -1,6 +1,8 @@
 package com.example.generactive_web2.model;
 
 public class GenerativeItem extends Item {
+    public GenerativeItem() {
+    }
 
     private double complexity = 1;
 

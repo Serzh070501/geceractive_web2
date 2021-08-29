@@ -20,15 +20,17 @@ com/example/generactive_web2/util/idgenerator/Type.java
  com.example.generactive_web2.util.idgenerator.Type
 com/example/generactive_web2/model/Configuration.java
  com.example.generactive_web2.model.Configuration
-com/example/generactive_web2/servlet/NotFoundServlet.java
- com.example.generactive_web2.servlet.NotFoundServlet
+com/example/generactive_web2/servlet/util/RoomServlet.java
+ com.example.generactive_web2.servlet.util.RoomServlet
 com/example/generactive_web2/servlet/util/ErrorEntity.java
  com.example.generactive_web2.servlet.util.ErrorEntity
 com/example/generactive_web2/servlet/util/HttpConstants.java
  com.example.generactive_web2.servlet.util.HttpConstants
  com.example.generactive_web2.servlet.util.HttpConstants$ContentType
-com/example/generactive_web2/servlet/RoomServlet.java
- com.example.generactive_web2.servlet.RoomServlet
+com/example/generactive_web2/servlet/util/NotFoundServlet.java
+ com.example.generactive_web2.servlet.util.NotFoundServlet
+com/example/generactive_web2/servlet/UpdateItemsServlet.java
+ com.example.generactive_web2.servlet.UpdateItemsServlet
 com/example/generactive_web2/model/Group.java
  com.example.generactive_web2.model.Group
 com/example/generactive_web2/model/Item.java
@@ -39,13 +41,13 @@ com/example/generactive_web2/model/BasketItem.java
  com.example.generactive_web2.model.BasketItem
 com/example/generactive_web2/model/GenerativeItem.java
  com.example.generactive_web2.model.GenerativeItem
-com/example/generactive_web2/mock/GroupMock.java
- com.example.generactive_web2.mock.GroupMock
+com/example/generactive_web2/servlet/ItemsServlet.java
+ com.example.generactive_web2.servlet.ItemsServlet
 com/example/generactive_web2/mock/ItemMock.java
  com.example.generactive_web2.mock.ItemMock
 com/example/generactive_web2/repository/GroupRepository.java
  com.example.generactive_web2.repository.GroupRepository
 com/example/generactive_web2/model/StockItem.java
  com.example.generactive_web2.model.StockItem
-com/example/generactive_web2/servlet/ItemsServlet.java
- com.example.generactive_web2.servlet.ItemsServlet
+com/example/generactive_web2/mock/GroupMock.java
+ com.example.generactive_web2.mock.GroupMock
