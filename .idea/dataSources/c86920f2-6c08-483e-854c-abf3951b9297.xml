@@ -227,7 +227,7 @@ false America/Rio_Branco
 false America/Rosario
 true America/Santa_Isabel
 false America/Santarem
-false America/Santiago
+true America/Santiago
 false America/Santo_Domingo
 false America/Sao_Paulo
 true America/Scoresbysund
@@ -425,7 +425,7 @@ false CHAST
 false CHUT
 false CKT
 true CLST
-false CLT
+true CLT
 false COT
 false CST
 true CST6CDT
@@ -438,13 +438,13 @@ true Canada/Newfoundland
 true Canada/Pacific
 false Canada/Saskatchewan
 false Canada/Yukon
-false Chile/Continental
-false Chile/EasterIsland
+true Chile/Continental
+true Chile/EasterIsland
 true Cuba
 false DAVT
 false DDUT
-false EASST
-false EAST
+true EASST
+true EAST
 false EAT
 true EDT
 true EEST
@@ -680,7 +680,7 @@ false Pacific/Auckland
 false Pacific/Bougainville
 false Pacific/Chatham
 false Pacific/Chuuk
-false Pacific/Easter
+true Pacific/Easter
 false Pacific/Efate
 false Pacific/Enderbury
 false Pacific/Fakaofo
@@ -789,7 +789,7 @@ false Zulu
     <database id="2" parent="1" name="generactive">
       <ObjectId>16395</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>507</IntrospectionStateNumber>
+      <IntrospectionStateNumber>519</IntrospectionStateNumber>
     </database>
     <database id="3" parent="1" name="postgres">
       <ObjectId>13442</ObjectId>
@@ -853,7 +853,7 @@ U/10
       <ObjectId>16396</ObjectId>
       <StateNumber>494</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>508</IntrospectionStateNumber>
+      <IntrospectionStateNumber>520</IntrospectionStateNumber>
     </schema>
     <schema id="17" parent="2" name="pg_catalog">
       <ObjectId>11</ObjectId>
