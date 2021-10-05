@@ -1,53 +1,74 @@
-com/example/generactive_web2/model/Resolution.java
- com.example.generactive_web2.model.Resolution
-com/example/generactive_web2/util/idgenerator/GroupIdGenerator.java
- com.example.generactive_web2.util.idgenerator.GroupIdGenerator
-com/example/generactive_web2/util/namegenerator/Nouns.java
- com.example.generactive_web2.util.namegenerator.Nouns
-com/example/generactive_web2/mock/ConfigurationMock.java
- com.example.generactive_web2.mock.ConfigurationMock
-com/example/generactive_web2/util/namegenerator/Adjectives.java
- com.example.generactive_web2.util.namegenerator.Adjectives
-com/example/generactive_web2/util/namegenerator/NameGen.java
- com.example.generactive_web2.util.namegenerator.NameGen
-com/example/generactive_web2/util/namegenerator/Casing.java
- com.example.generactive_web2.util.namegenerator.Casing
-com/example/generactive_web2/HelloServlet.java
- com.example.generactive_web2.HelloServlet
-com/example/generactive_web2/util/idgenerator/IdGenerator.java
- com.example.generactive_web2.util.idgenerator.IdGenerator
-com/example/generactive_web2/util/idgenerator/Type.java
- com.example.generactive_web2.util.idgenerator.Type
-com/example/generactive_web2/model/Configuration.java
- com.example.generactive_web2.model.Configuration
-com/example/generactive_web2/servlet/util/RoomServlet.java
- com.example.generactive_web2.servlet.util.RoomServlet
-com/example/generactive_web2/servlet/util/ErrorEntity.java
- com.example.generactive_web2.servlet.util.ErrorEntity
-com/example/generactive_web2/servlet/util/HttpConstants.java
- com.example.generactive_web2.servlet.util.HttpConstants
- com.example.generactive_web2.servlet.util.HttpConstants$ContentType
-com/example/generactive_web2/servlet/util/NotFoundServlet.java
- com.example.generactive_web2.servlet.util.NotFoundServlet
-com/example/generactive_web2/servlet/UpdateItemsServlet.java
- com.example.generactive_web2.servlet.UpdateItemsServlet
-com/example/generactive_web2/model/Group.java
- com.example.generactive_web2.model.Group
-com/example/generactive_web2/model/Item.java
- com.example.generactive_web2.model.Item
-com/example/generactive_web2/model/Basket.java
- com.example.generactive_web2.model.Basket
-com/example/generactive_web2/model/BasketItem.java
- com.example.generactive_web2.model.BasketItem
-com/example/generactive_web2/model/GenerativeItem.java
- com.example.generactive_web2.model.GenerativeItem
-com/example/generactive_web2/servlet/ItemsServlet.java
- com.example.generactive_web2.servlet.ItemsServlet
-com/example/generactive_web2/mock/ItemMock.java
- com.example.generactive_web2.mock.ItemMock
-com/example/generactive_web2/repository/GroupRepository.java
- com.example.generactive_web2.repository.GroupRepository
-com/example/generactive_web2/model/StockItem.java
- com.example.generactive_web2.model.StockItem
-com/example/generactive_web2/mock/GroupMock.java
- com.example.generactive_web2.mock.GroupMock
+am/aca/generactive/config/HibernateConfiguration.java
+ am.aca.generactive.config.HibernateConfiguration
+am/aca/generactive/database/DatabaseConnection.java
+ am.aca.generactive.database.DatabaseConnection
+am/aca/generactive/util/DatabaseConfigurationUtil.java
+ am.aca.generactive.util.DatabaseConfigurationUtil
+am/aca/generactive/model/Resolution.java
+ am.aca.generactive.model.Resolution
+am/aca/generactive/util/namegenerator/NameGen.java
+ am.aca.generactive.util.namegenerator.NameGen
+am/aca/generactive/repository/ItemRepository.java
+ am.aca.generactive.repository.ItemRepository
+am/aca/generactive/mock/ItemMock.java
+ am.aca.generactive.mock.ItemMock
+am/aca/generactive/model/GenerativeItem.java
+ am.aca.generactive.model.GenerativeItem
+am/aca/generactive/model/ItemDetails.java
+ am.aca.generactive.model.ItemDetails
+am/aca/generactive/util/namegenerator/Adjectives.java
+ am.aca.generactive.util.namegenerator.Adjectives
+am/aca/generactive/util/namegenerator/Casing.java
+ am.aca.generactive.util.namegenerator.Casing
+am/aca/generactive/model/Basket.java
+ am.aca.generactive.model.Basket
+am/aca/generactive/mock/ConfigurationMock.java
+ am.aca.generactive.mock.ConfigurationMock
+am/aca/generactive/model/Configuration.java
+ am.aca.generactive.model.Configuration
+am/aca/generactive/util/URLUtils.java
+ am.aca.generactive.util.URLUtils
+am/aca/generactive/mock/GroupMock.java
+ am.aca.generactive.mock.GroupMock
+am/aca/generactive/util/namegenerator/Nouns.java
+ am.aca.generactive.util.namegenerator.Nouns
+am/aca/generactive/config/DataSourceConfig.java
+ am.aca.generactive.config.DataSourceConfig
+am/aca/generactive/service/ItemService.java
+ am.aca.generactive.service.ItemService
+am/aca/generactive/LoggerFilter.java
+ am.aca.generactive.LoggerFilter
+am/aca/generactive/model/BasketItem.java
+ am.aca.generactive.model.BasketItem
+am/aca/generactive/controller/ItemController.java
+ am.aca.generactive.controller.ItemController
+am/aca/generactive/repository/mapper/GroupResultSetMapper.java
+ am.aca.generactive.repository.mapper.GroupResultSetMapper
+am/aca/generactive/config/SpringAppConfig.java
+ am.aca.generactive.config.SpringAppConfig
+am/aca/generactive/service/ItemServiceImpl.java
+ am.aca.generactive.service.ItemServiceImpl
+am/aca/generactive/model/Item.java
+ am.aca.generactive.model.Item
+am/aca/generactive/config/WebConfig.java
+ am.aca.generactive.config.WebConfig
+am/aca/generactive/model/Group.java
+ am.aca.generactive.model.Group
+am/aca/generactive/util/idgenerator/Type.java
+ am.aca.generactive.util.idgenerator.Type
+am/aca/generactive/model/StockItem.java
+ am.aca.generactive.model.StockItem
+am/aca/generactive/service/dto/ItemDTO.java
+ am.aca.generactive.service.dto.ItemDTO
+am/aca/generactive/service/dto/ItemDetailsDTO.java
+ am.aca.generactive.service.dto.ItemDetailsDTO
+am/aca/generactive/repository/ItemRepositoryImpl.java
+ am.aca.generactive.repository.ItemRepositoryImpl
+am/aca/generactive/util/idgenerator/GroupIdGenerator.java
+ am.aca.generactive.util.idgenerator.GroupIdGenerator
+am/aca/generactive/util/idgenerator/IdGenerator.java
+ am.aca.generactive.util.idgenerator.IdGenerator
+am/aca/generactive/repository/mapper/ItemResultSetMapper.java
+ am.aca.generactive.repository.mapper.ItemResultSetMapper
+am/aca/generactive/service/mapper/ItemDTOMapper.java
+ am.aca.generactive.service.mapper.ItemDTOMapper

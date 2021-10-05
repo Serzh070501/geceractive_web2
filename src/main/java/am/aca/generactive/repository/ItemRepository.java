@@ -1,67 +1,21 @@
 package am.aca.generactive.repository;
 
+
 import am.aca.generactive.model.Item;
-import am.aca.generactive.model.StockItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
-public class ItemRepository {
+public interface ItemRepository extends JpaRepository<Item, Long>, JpaSpecificationExecutor<Item> {
 
-    private static ItemRepository sInstance;
+    @Query("select i from Item i join fetch i.group" +
+            " where lower(i.name) = lower(:name)" +
+            " and i.basePrice > :priceFrom")
+    List<Item> find(@Param("name") String name, @Param("priceFrom") Integer priceFrom);
 
-    private final List<Item> items = new ArrayList<>();
-
-    {
-        items.add(new StockItem(1, 100, "katu"));
-        items.add(new StockItem(2, 500, "vizu"));
-    }
-
-    public static ItemRepository getInstance() {
-        if (sInstance == null) {
-            sInstance = new ItemRepository();
-        }
-
-        return sInstance;
-    }
-
-    public void addItem(Item item) {
-        this.items.add(item);
-    }
-
-    public long updateItem(Item item) {
-        return items.stream()
-                .filter((i) -> i.equals(item))
-                .map((i) -> item)
-                .count();
-    }
-
-    public void addItemAll(List<Item> items) {
-        this.items.addAll(items);
-    }
-
-    public List<Item> getAllItems() {
-        return new ArrayList<>(items);
-    }
-
-    public List<Item> findItems(Predicate<Item> predicate) {
-        return items.stream().filter(predicate).collect(Collectors.toList());
-    }
-
-    public Optional<Item> findItemById(long itemId) {
-        return  items.stream()
-                .filter((i) -> i.getId() == itemId)
-                .findAny();
-    }
-
-    public boolean deleteById(int itemId) {
-        return items.removeIf(i -> i.getId() == itemId);
-    }
-
-    private ItemRepository() {
-
-    }
+    @Query("select i.name from Item i")
+    List<String> getAllNames();
 }

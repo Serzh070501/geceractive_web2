@@ -789,7 +789,7 @@ false Zulu
     <database id="2" parent="1" name="generactive">
       <ObjectId>16395</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>519</IntrospectionStateNumber>
+      <IntrospectionStateNumber>573</IntrospectionStateNumber>
     </database>
     <database id="3" parent="1" name="postgres">
       <ObjectId>13442</ObjectId>
@@ -853,7 +853,7 @@ U/10
       <ObjectId>16396</ObjectId>
       <StateNumber>494</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>520</IntrospectionStateNumber>
+      <IntrospectionStateNumber>574</IntrospectionStateNumber>
     </schema>
     <schema id="17" parent="2" name="pg_catalog">
       <ObjectId>11</ObjectId>
@@ -872,6 +872,7 @@ UC/10
 </Acl>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
+      <IntrospectionStateNumber>575</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="19" parent="2" name="plpgsql">
@@ -971,5 +972,152 @@ UC/10
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
+    <table id="31" parent="18" name="generactive_item">
+      <ObjectId>16451</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>572</StateNumber>
+    </table>
+    <table id="32" parent="18" name="groups">
+      <ObjectId>16427</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>558</StateNumber>
+    </table>
+    <table id="33" parent="18" name="stock_item">
+      <ObjectId>16440</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>562</StateNumber>
+    </table>
+    <column id="34" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>572</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="35" parent="31" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>572</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="36" parent="31" name="baseprice">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>572</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="37" parent="31" name="imageurl">
+      <Position>4</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>572</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="38" parent="31" name="complexity">
+      <Position>5</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>572</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="39" parent="31" name="gp_id">
+      <Position>6</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>572</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="40" parent="31" name="generactive_item_gp_id_fkey">
+      <ObjectId>16457</ObjectId>
+      <StateNumber>572</StateNumber>
+      <ColNames>gp_id</ColNames>
+      <RefTableId>16427</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>groups</RefTableName>
+      <RefKeyName>groups_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="41" parent="32" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>558</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="42" parent="32" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>558</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="43" parent="32" name="parentgroup_id">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>558</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="44" parent="32" name="groups_pkey">
+      <ObjectId>16433</ObjectId>
+      <StateNumber>558</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <key id="45" parent="32" name="groups_pkey">
+      <ObjectId>16434</ObjectId>
+      <StateNumber>558</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>groups_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="46" parent="32" name="groups_parentgroup_id_fkey">
+      <ObjectId>16435</ObjectId>
+      <StateNumber>558</StateNumber>
+      <ColNames>parentgroup_id</ColNames>
+      <RefTableId>16427</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>groups</RefTableName>
+      <RefKeyName>groups_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="47" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>562</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="48" parent="33" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>562</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="49" parent="33" name="baseprice">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>562</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="50" parent="33" name="imageurl">
+      <Position>4</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>562</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="51" parent="33" name="gp_id">
+      <Position>5</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>562</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="52" parent="33" name="stock_item_gp_id_fkey">
+      <ObjectId>16446</ObjectId>
+      <StateNumber>562</StateNumber>
+      <ColNames>gp_id</ColNames>
+      <RefTableId>16427</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>groups</RefTableName>
+      <RefKeyName>groups_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>
